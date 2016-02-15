@@ -6,6 +6,49 @@
 		<meta name="viewport" content="width=device-width">
 
 		<title>Template for React Applications (using gulp)</title>
+		<style>
+			@keyframes headSwagger {
+				0% {
+					transform: rotateZ(0deg);
+				}
+				25% {
+					transform: rotateZ(3deg);
+				}
+				50% {
+					transform: rotateZ(0deg);
+				}
+				75% {
+					transform: rotateZ(-3deg);
+				}
+				100% {
+					transform: rotateZ(0deg);
+				}
+			}
+			@keyframes popOut {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.3);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+			.badge[data-animating=yes] {
+				animation: popOut .5s;
+			}
+			.member-in-chooser {
+				transition: transform .2s;	
+			}
+			.member-in-chooser:hover {
+				transform: scale(1.15);
+			}
+			.member-in-chooser:active {
+				-webkit-filter: grayscale(.5) brightness(1.15) contrast(1.05);
+				filter: grayscale(.5) brightness(1.15) contrast(1.05);
+			}
+		</style>
 	</head>
 
 	<body>

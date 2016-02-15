@@ -1,0 +1,131 @@
+module.exports = {
+    activeMemberId: 1,
+    members: [
+        {
+            id: 1,
+            name: 'Adam Finlayson',
+            photo: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/000/0c8/27a/3faa178.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 2,
+            name: 'Chris Walker',
+            photo: 'http://www.gravatar.com/avatar/1ab6a7d1fd63be946ca5e3bcb691edc4?s=200',
+            energyDrinks: 0,
+        },
+        {
+            id: 3,
+            name: 'Lee Roberson',
+            photo: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/000/037/380/028d09b.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 4,
+            name: 'Eric Carty-Fickes',
+            photo: 'http://static1.squarespace.com/static/53fb5b7ce4b02099c7d4a6c9/53fbb595e4b0a085e8d58a75/541c81d0e4b08ff99b86687a/1434896097975/?format=500w',
+            energyDrinks: 0,
+        },
+        {
+            id: 5,
+            name: 'Daniel Johannsson',
+            photo: 'http://www.weinberg.northwestern.edu/images/administration/directory/dan-johannsson-80x100.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 6,
+            name: 'Vahid Azam',
+            photo: 'http://www.northwestern.edu/studentaffairs/sait/about-us/meet-the-staff/assets/vahid.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 7,
+            name: 'Matthew Rich',
+            photo: 'https://pbs.twimg.com/profile_images/653795721305440256/sMP0ppe3.png',
+            energyDrinks: 0,
+        },
+        {
+            id: 8,
+            name: 'Rodolfo Vieira',
+            photo: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/122/095/1df8d09.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 9,
+            name: 'Alex Miner',
+            photo: 'https://nuamps.at.northwestern.edu/sites/nuamps.at.northwestern.edu/files/Unknown_1.jpeg?1339517764',
+            energyDrinks: 0,
+        },
+        {
+            id: 10,
+            name: 'Vikram Dewani',
+            photo: 'http://www.medill.northwestern.edu/_pictures/bio-images/Vikram-Dewani-300x450.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 11,
+            name: 'Scott Bradley',
+            photo: 'http://www.medill.northwestern.edu/_pictures/bio-images/Scott-Bradley-300x450.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 12,
+            name: 'Rustam Aliyev',
+            photo: 'http://www.medill.northwestern.edu/_pictures/bio-images/Rustam-Aliyev4-300x450.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 13,
+            name: 'Santina Croniser',
+            photo: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/7/005/054/1af/0033a9c.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 14,
+            name: 'Harry Saito',
+            photo: 'https://lh3.googleusercontent.com/-xPZKj22NpMA/AAAAAAAAAAI/AAAAAAAAAAA/x6bImR55LeQ/s120-c/photo.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 15,
+            name: 'Jacob Arnold',
+            photo: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/005/0b7/17c/186b2de.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 16,
+            name: 'Adam Skrzypulec',
+            photo: 'https://media.licdn.com/media/p/4/005/0b2/250/3e59eab.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 17,
+            name: 'Rey Serantes',
+            photo: 'https://avatars3.githubusercontent.com/u/8884338?v=3&s=460',
+            energyDrinks: 0,
+        },
+        {
+            id: 18,
+            name: 'Alexandar Tzanov',
+            photo: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/0d0/205/150e5c8.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 19,
+            name: 'George Campbell',
+            photo: 'http://www.weinberg.northwestern.edu/images/administration/directory/george-campbell-80x100.jpg',
+            energyDrinks: 0,
+        },
+        {
+            id: 20,
+            name: 'Jacob Collins',
+            photo: 'http://jacobccollins.com/wp-content/uploads/2013/09/Collins-150x150.jpeg',
+            energyDrinks: 0,
+        },
+        {
+            id: 21,
+            name: 'Karen Didrickson',
+            photo: 'https://pbs.twimg.com/profile_images/511296622517428224/Yi-bNN0x_400x400.jpeg',
+            energyDrinks: 0,
+        },
+    ]
+};

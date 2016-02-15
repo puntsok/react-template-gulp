@@ -1,37 +1,18 @@
-// Import React
+
 var React = require('react');
 
+function HelloWorld(props) {
 
-//====== Component ======//
+	var message = props.message;
+	var subject = props.subject;
+	var number = props.number;
+	var onPlusClick = props.onPlusClick;
 
-var HelloWorld = React.createClass({
+	return (
+		<p>{message} {subject} ({number})
+			<button onClick={onPlusClick}>+</button>
+		</p>
+	);
+}
 
-	getDefaultProps: function () {
-		return {
-			name: "World"
-		}
-	},
-	getInitialState: function () {
-		return {
-			count: 0
-		}
-	},
-	render: function () {
-		return <p>Hello, {this.props.name} ({this.state.count})
-			<button onClick={this.add}>+</button>
-		</p>;
-	},
-
-
-	//====== Component Functions ======//
-
-	add: function () {
-		this.setState({
-			count: this.state.count + 1
-		});
-	}
-}); // End Component
-
-
-// Export Component
 module.exports = HelloWorld;

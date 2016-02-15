@@ -34,7 +34,9 @@
     "livereload": "^0.4.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-redux": "^4.4.0",
     "reactify": "^1.1.1",
+    "redux": "^3.3.1",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   }
