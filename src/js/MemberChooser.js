@@ -38,7 +38,7 @@ var MemberChooser = React.createClass({
                             className='member-in-chooser'
                             key={id} 
                             onClick={ function() { onMemberClick(id) }}>
-                            <Badge number={energyDrinks} color="green" />
+                            <Badge number={energyDrinks} color="blue" />
                         </span>
                     );
                 })}

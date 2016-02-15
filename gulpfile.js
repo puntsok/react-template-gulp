@@ -6,6 +6,7 @@ var watchify = require('watchify');
 var streamify = require('gulp-streamify');
 var babelify = require('babelify');
 var gutil = require('gulp-util');
+var livereload = require('gulp-livereload');
 
 var path = {
 	HTML: 'src/index.html',
@@ -19,20 +20,31 @@ var path = {
 
 gulp.task('copy', function(){
 	gulp.src(path.HTML)
-	.pipe(gulp.dest(path.DEST));
+	.pipe(gulp.dest(path.DEST))
+	.pipe(livereload());
 });
 
 function compile(bundle) {
 	bundle
 	.transform(babelify, {presets: ["es2015", "react"]})
 	.bundle()
+	.on('error', function(err) {
+		gutil.log('react-template-gulp:',  gutil.colors.red('compilation error'));
+		gutil.log(gutil.colors.bgBlack(gutil.colors.white(err.message)));
+		gutil.beep();
+		this.emit('end');
+	})
 	.pipe(source(path.OUT))
-	.pipe(gulp.dest(path.DEST_SRC));
+	.pipe(gulp.dest(path.DEST_SRC))
+	.pipe(livereload());
 
 	gutil.log('react-template-gulp:',  gutil.colors.cyan('compiled'));
 }
 
 gulp.task('watch', function() {
+	// Listen to livereload
+	livereload.listen();
+
 	// Watch index.html
 	gulp.watch(path.HTML, ['copy']);
 
