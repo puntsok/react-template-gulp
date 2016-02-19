@@ -64,7 +64,7 @@ gulp.task('build', function(){
 	.transform(babelify, {presets: ["es2015", "react"]})
 	.bundle()
 	.pipe(source(path.MINIFIED_OUT))
-	.pipe(streamify(uglify()))
+	// .pipe(streamify(uglify()))
 	.pipe(gulp.dest(path.DEST_BUILD));
 });
 

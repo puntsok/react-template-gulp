@@ -1,6 +1,8 @@
 
 var React = require('react');
 var connect = require('react-redux').connect;
+var supportsFilterCSSProp = ('filter' in document.createElement('p').style);
+var filterPropName = supportsFilterCSSProp ? 'filter' : 'WebkitFilter';
 
 function PhotoFrame(props) {
 
@@ -11,12 +13,17 @@ function PhotoFrame(props) {
     var duration = illness ? (3.1 - (illness/5)) : 0;
     var style = {
         width: '200px',
-        WebkitFilter: 'hue-rotate(' + (illness * 10) + 'deg)',
-        filter: 'hue-rotate(' + (illness * 10) + 'deg)',
-        animation: 'headSwagger ' + duration + 's linear 0s infinite normal none',
+        animationName: 'headSwagger',
+        animationDuration: duration + 's',
+        animationTimingFunction: 'linear',
+        animationDelay: '0s',
+        animationIterationCount: 'infinite',
+        // animation: 'headSwagger ' + duration + 's linear 0s infinite normal none',
     };
+    style[filterPropName] = 'hue-rotate(' + (illness * 10) + 'deg)';
+
     return (
-        <img src={src} style={style} alt={alt} />
+        <img src={src} style={style} alt={alt} className={ Date.now() }/>
     );
 };
 
